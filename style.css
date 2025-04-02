@@ -1,0 +1,83 @@
+/* Overall container for the chat */
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-y: auto;
+    height: 400px; /* or any desired height */
+  }
+  
+  /* Styling for the AI agent's message with typing animation */
+  .ai-message {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    max-width: 75%;
+    display: inline-block;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animation for typing effect */
+  .typing-animation {
+    display: inline-block;
+    border-right: 2px solid #333;
+    animation: typing 2s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  /* Typing animation */
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Blink cursor animation */
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Styling for bold text */
+  .ai-message b {
+    font-weight: bold;
+    color: #333; /* You can change this to any color you like */
+  }
+  
+  /* Styling for the user's message */
+  .user-message {
+    background-color: #e1f5fe;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    max-width: 75%;
+    display: inline-block;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: right;
+  }
+  
+  /* Timestamp (if you have timestamps for the messages) */
+  .timestamp {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+    display: block;
+    margin-top: 5px;
+  }
+  
