@@ -9,6 +9,7 @@ function typeMessage(elementId, message, typingSpeed) {
     
     // Example: Bold specific words
     const boldWords = ["business", "ideas"];  // List of words to bold
+    console.log("boldWords", boldWords)
   
     // Function to check if a word should be bolded
     function processMessage(message) {
